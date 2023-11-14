@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Gambar from '/public/hero.png'
+
 import 'tailwindcss/tailwind.css'
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
                     </div>
             </div>
             <div>
-                <Image src={Gambar} width='500' height='500'></Image>
+                <Image src='/gambar1.png' alt='Gambar' width='500' height='500'></Image>
             </div>
         </div>
     </section>
