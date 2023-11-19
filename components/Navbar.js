@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import 'tailwindcss/tailwind.css';
 
+
 export default function Navbar() {
     
     const [isClick,setisClick] = useState(false);
@@ -29,7 +30,7 @@ export default function Navbar() {
                         <Link href="/">
                             <div className="text-white hover:bg-white hover:text-black rounded-lg p-2">Contact</div>
                         </Link>
-                        <Link href="/">
+                        <Link href="/about">
                             <div className="text-white hover:bg-white hover:text-black rounded-lg p-2">About Us</div>
                         </Link>
                 </div>
@@ -82,7 +83,7 @@ export default function Navbar() {
                     <Link href="/">Home</Link>
                  </div>
                 <div className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
-                    <Link href="/">About Us</Link>
+                    <Link href="/about">About Us</Link>
                  </div>
                  <div className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
                     <Link href="/">Contact</Link>
